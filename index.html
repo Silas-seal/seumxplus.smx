@@ -45,6 +45,24 @@ and open the template in the editor.
 		page.<p/> We are building a team of brilliant developers in the process. <p/>
 		</b></th> </tr>
 		
+		<!--
+    PeoplePerHour Profile Widget
+    The div#pph-hire me is the element
+    where the iframe will be inserted.
+    You may move this element wherever
+    you need to display the widget
+-->
+<div id="pph-hireme"></div>
+<script type="text/javascript">
+(function(d, s) {
+    var useSSL = 'https:' == document.location.protocol;
+    var js, where = d.getElementsByTagName(s)[0],
+    js = d.createElement(s);
+    js.src = (useSSL ? 'https:' : 'http:') +  '//www.peopleperhour.com/hire/926627922/4110408.js?width=336&height=335&orientation=vertical&theme=dark&hourlies=654874%2C654883&rnd='+parseInt(Math.random()*10000, 10);
+    try { where.parentNode.insertBefore(js, where); } catch (e) { if (typeof console !== 'undefined' && console.log && e.stack) { console.log(e.stack); } }
+}(document, 'script'));
+</script>
+		
 		<tr><th>
 		<img src="Images/sil1.jpg" height="397" width="297" />
 		</th><th valign="top">
